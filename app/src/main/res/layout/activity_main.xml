@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    tools:context=".MainActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoImage"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/appLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_60sdp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Beni Suef"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find your place"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_2sdp"/>
+
+
+    <Button
+        android:id="@+id/restaurantButton"
+        android:text="@string/restaurant_cafe"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_17ssp"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/item_button_shape"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|end"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/hotelsButton"
+        android:text="hotels"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_17ssp"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/item_button2_shape"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|end"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </Button>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
