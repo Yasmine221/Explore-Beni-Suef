@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/base"
-    tools:context=".MainActivity">
+    tools:context=".Main.MainActivity">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/logoImage"
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp"
-        android:src="@drawable/appLogo"
+        android:src="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,31 +50,32 @@
         android:text="@string/restaurant_cafe"
         android:textColor="#FFFFFF"
         android:textSize="@dimen/_17ssp"
-        android:layout_width="@dimen/_230sdp"
+        android:layout_width="@dimen/_270sdp"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/item_button_shape"
         android:layout_marginTop="@dimen/_80sdp"
         android:fontFamily="sans-serif-black"
-        android:gravity="center|end"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/hotelsButton"
         android:text="hotels"
         android:textColor="#FFFFFF"
         android:textSize="@dimen/_17ssp"
-        android:layout_width="@dimen/_230sdp"
+        android:layout_width="@dimen/_270sdp"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/item_button2_shape"
         android:layout_marginTop="@dimen/_30sdp"
         android:fontFamily="sans-serif-black"
-        android:gravity="center|end"
+        android:gravity="center"
+        app:icon="@drawable/hotel_icon"
         app:layout_constraintTop_toBottomOf="@+id/restaurantButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-    </Button>
+    </com.google.android.material.button.MaterialButton>
 
 
 

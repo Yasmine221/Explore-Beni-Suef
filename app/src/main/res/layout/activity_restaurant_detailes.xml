@@ -4,6 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RestaurantDetailesActivity">
+    android:background="@color/base"
+    tools:context=".Restaurant.RestaurantDetailesActivity">
+    <Button
+        android:id="@+id/Menu"
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_17ssp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/item_button_shape"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/Location"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_17ssp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/item_button_shape"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toBottomOf="@id/Menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/Phone_Number"
+        android:text="Phone Number"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_17ssp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/item_button_shape"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toBottomOf="@id/Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/Work_Time"
+        android:text="Work Time"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_17ssp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/item_button_shape"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toBottomOf="@id/Phone_Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

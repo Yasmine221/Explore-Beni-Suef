@@ -1,27 +1,27 @@
-package com.example.explorebns;
+package com.example.explorebns.Model;
 
 public class CardModel {
-    private String restaurantName;
-    private int restaurantImg;
+    private String Name;
+    private int Img;
 
     public CardModel(String restaurantName, int restaurantImg) {
-        this.restaurantName = restaurantName;
-        this.restaurantImg = restaurantImg;
+        this.Name = restaurantName;
+        this.Img = restaurantImg;
     }
 
-    public String getRestaurantName() {
-        return restaurantName;
+    public String getName() {
+        return Name;
     }
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
+    public void setName(String name) {
+        Name = name;
     }
 
-    public int getRestaurantImg() {
-        return restaurantImg;
+    public int getImg() {
+        return Img;
     }
 
-    public void setRestaurantImg(int restaurantImg) {
-        this.restaurantImg = restaurantImg;
+    public void setImg(int img) {
+        Img = img;
     }
 }

@@ -1,12 +1,13 @@
-package com.example.explorebns;
+package com.example.explorebns.Splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
-import android.widget.ImageView;
+
+import com.example.explorebns.Main.MainActivity;
+import com.example.explorebns.R;
 
 import pl.droidsonroids.gif.GifImageView;
 
@@ -25,8 +26,9 @@ GifImageView imageView;
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         },3000);
 

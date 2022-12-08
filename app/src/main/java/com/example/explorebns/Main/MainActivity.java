@@ -1,4 +1,4 @@
-package com.example.explorebns;
+package com.example.explorebns.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 

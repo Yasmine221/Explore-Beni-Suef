@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Explore BNS</string>
     <string name="restaurant_cafe"><![CDATA[Restaurant & cafe]]></string>
+    <string name="restaurantcafe"><![CDATA[Restaurant & Cafe]]></string>
+    <string name="Restaurant_Name">Restaurant Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

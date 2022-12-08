@@ -3,10 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/drawable/item_button2_shape.xml" value="0.1" />
         <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/drawable/item_button_shape.xml" value="0.1" />
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/drawable/item_restaurant_background.xml" value="0.1" />
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/activity_hotel.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/activity_restaurant.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/activity_restaurant_and_cafe.xml" value="0.2" />
         <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/fragment_restarant.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/fg/AndroidStudioProjects/ExploreBNS/app/src/main/res/layout/item_main_card_layout.xml" value="0.22" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/activity_hotel.xml" value="0.2418478260869565" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/activity_hotels_details.xml" value="0.24010416666666667" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/activity_main.xml" value="0.2418478260869565" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/activity_restaurant.xml" value="0.2259963768115942" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/activity_restaurant_and_cafe.xml" value="0.2259963768115942" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/activity_restaurant_detailes.xml" value="0.2418478260869565" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/fragment_hotels.xml" value="0.24010416666666667" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/fragment_restarant.xml" value="0.2259963768115942" />
+        <entry key="..\:/android matieral/projects/ExploreBNS/app/src/main/res/layout/item_main_card_layout.xml" value="0.2418478260869565" />
       </map>
     </option>
   </component>

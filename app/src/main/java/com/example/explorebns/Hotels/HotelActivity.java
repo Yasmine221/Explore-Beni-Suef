@@ -1,14 +1,24 @@
-package com.example.explorebns;
+package com.example.explorebns.Hotels;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class HotelActivity extends AppCompatActivity {
+import com.example.explorebns.Adapter.FragmentRestaruntAdapter;
+import com.example.explorebns.R;
+import com.example.explorebns.Restaurant.RestarantFragment;
+import com.example.explorebns.databinding.ActivityHotelBinding;
+import com.example.explorebns.databinding.ActivityRestaurantBinding;
 
+public class HotelActivity extends AppCompatActivity {
+ ActivityHotelBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel);
+        binding = ActivityHotelBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        FragmentRestaruntAdapter adapter=new FragmentRestaruntAdapter(getSupportFragmentManager());
+        adapter.addFragment(new HotelsFragment(),"");
+        binding.restaurantPager.setAdapter(adapter);
     }
 }

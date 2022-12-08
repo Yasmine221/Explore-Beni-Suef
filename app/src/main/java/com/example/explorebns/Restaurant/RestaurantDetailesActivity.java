@@ -1,8 +1,10 @@
-package com.example.explorebns;
+package com.example.explorebns.Restaurant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.explorebns.R;
 
 public class RestaurantDetailesActivity extends AppCompatActivity {
 

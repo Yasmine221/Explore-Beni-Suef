@@ -1,4 +1,4 @@
-package com.example.explorebns;
+package com.example.explorebns.Restaurant;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.example.explorebns.Adapter.ResturantRecyclerAdapter;
 import com.example.explorebns.Model.CardModel;
+import com.example.explorebns.R;
 import com.example.explorebns.databinding.FragmentRestarantBinding;
 
 import java.util.ArrayList;
@@ -73,6 +74,6 @@ public class RestarantFragment extends Fragment implements ResturantRecyclerAdap
 
     @Override
     public void oncardClick(CardModel cardModel) {
-        startActivity(new Intent(requireActivity(),RestaurantDetailesActivity.class));
+        startActivity(new Intent(requireActivity(), RestaurantDetailesActivity.class));
     }
 }

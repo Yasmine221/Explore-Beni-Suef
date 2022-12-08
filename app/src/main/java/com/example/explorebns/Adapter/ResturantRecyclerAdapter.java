@@ -1,4 +1,4 @@
-package com.example.explorebns;
+package com.example.explorebns.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,15 +7,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.explorebns.Model.CardModel;
+import com.example.explorebns.R;
 import com.example.explorebns.databinding.ItemMainCardLayoutBinding;
 
 import java.util.List;
 
 public class ResturantRecyclerAdapter extends RecyclerView.Adapter<ResturantRecyclerAdapter.holder> {
     private List<CardModel> cardModelList ;
-
-    public ResturantRecyclerAdapter(List<CardModel> cardModelList) {
+    private cardClickListenar  cardClickListenar ;
+    public ResturantRecyclerAdapter(List<CardModel> cardModelList, cardClickListenar cardClickListenar) {
         this.cardModelList = cardModelList;
+        this.cardClickListenar=cardClickListenar;
     }
 
     @NonNull
@@ -29,8 +32,8 @@ public class ResturantRecyclerAdapter extends RecyclerView.Adapter<ResturantRecy
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
         CardModel cardModel = cardModelList.get(position);
-        holder.binding.restaurantName.setText(cardModel.getRestaurantName());
-        holder.binding.restaurantImage.setImageResource(cardModel.getRestaurantImg());
+        holder.binding.restaurantName.setText(cardModel.getName());
+        holder.binding.restaurantImage.setImageResource(cardModel.getImg());
 
 
     }
@@ -47,6 +50,15 @@ public class ResturantRecyclerAdapter extends RecyclerView.Adapter<ResturantRecy
         public holder(@NonNull ItemMainCardLayoutBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+            itemView.getRootView().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    cardClickListenar.oncardClick(cardModelList.get(getLayoutPosition()));
+                }
+            });
         }
+    }
+    public interface cardClickListenar{
+        void oncardClick(CardModel cardModel);
     }
 }
