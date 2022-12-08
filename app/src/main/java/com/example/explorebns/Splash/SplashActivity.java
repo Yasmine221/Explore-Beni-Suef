@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.ImageView;
 
 import pl.droidsonroids.gif.GifImageView;
@@ -27,7 +28,7 @@ GifImageView imageView;
                 Intent intent = new Intent(SplashActivity.this,MainActivity.class);
                 startActivity(intent);
             }
-        },4000);
+        },3000);
 
     }
 }
